@@ -5,6 +5,16 @@
 Options All -Indexes
 Options +FollowSymLinks
 
+# -------------------------------------------------------------------------------
+# HTACCESS Permissions
+# -------------------------------------------------------------------------------
+#
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+ order allow,deny
+ deny from all
+ satisfy all
+</Files>
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
