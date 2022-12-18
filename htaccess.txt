@@ -48,10 +48,10 @@ AddDefaultCharset utf-8
 AddCharset utf-8 .css .js .xml .json .rss .atom
 
 
-
-<FilesMatch ".(eot|ttf|otf|woff|js)">
+<FilesMatch ".(eot|ttf|otf|woff|js|hb|css|cfm)">
 	Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
+
 # -------------------------------------------------------------------------------
 # lower case URL
 # -------------------------------------------------------------------------------
