@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE >
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
 <cfoutput>
 <title>#REReplace(application.settingsManager.getSite(request.siteID).getEnableLockdown(), "([a-z]{1})", "\U\1", "ONE" )# Mode</title>
 <link rel="stylesheet" href="#application.configBean.getContext()##application.configBean.getAdminDir()#/assets/fonts/font-awesome/css/font-awesome.css">
@@ -11,19 +10,34 @@
 <style type="text/css">
 
 body {
-	background: #f1f1f1;
+	background: #f7f7f7;
 	font-family: "Helvetica", "Arial", sans-serif;
 	color: #343434;
 	margin: 0; padding: 0;
 }
 
+#wrapper:before {
+box-shadow: 1px 10px 10px -9px #ff3405;
+height: 252px;
+width:300px;
+content: " ";
+position: absolute;
+background: none;
+left: 0;
+top: 0;
+padding: 0px 25px;
+z-index:-1
+}
 #wrapper {
 	width: 300px;
 	margin: 100px auto;
-	background: #FCFCFC;
+	position:relative;
+	background: #fff;
 	padding: 25px;
-	border: 1px solid #ccc;
-	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+	border: 1px solid #eee;
+}
+#wrapper:after {
+	width: 300px;
 }
 
 .alert {
